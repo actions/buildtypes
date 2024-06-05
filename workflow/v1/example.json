@@ -3,9 +3,8 @@
   "predicateType": "https://slsa.dev/provenance/v1",
   "predicate": {
     "buildDefinition": {
-      "buildType": "https://github.com/actions/buildtypes/workflow/v1",
+      "buildType": "https://actions.github.io/buildtypes/workflow/v1",
       "externalParameters": {
-        "runner_environment": "github-hosted",
         "workflow": {
           "ref": "refs/heads/main",
           "repository": "https://github.com/octocat/hello-world",
@@ -16,7 +15,8 @@
         "github": {
           "event_name": "workflow_dispatch",
           "repository_id": "1296269",
-          "repository_owner_id": "583231"
+          "repository_owner_id": "583231",
+          "runner_environment": "github-hosted"
         }
       },
       "resolvedDependencies": [
