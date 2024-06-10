@@ -97,13 +97,14 @@ care to consider that the path and/or ref MAY contain `@` symbols.
 
 ### Internal parameters
 
-All internal parameters are OPTIONAL.
+The internal parameters MUST contain the `github` object with all of the
+parameters shown below.
 
 | Parameter | Type   | Description                                                                                                                                                               |
 | --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `github`  | object | A subset of the [github context] as described below. Only includes parameters that are likely to have an effect on the build and that are not already captured elsewhere. |
 
-The `github` object SHOULD contains the following elements:
+The `github` object MUST contains the following elements:
 
 | GitHub Context Parameter     | Type   | Description                                                                                             |
 | ---------------------------- | ------ | ------------------------------------------------------------------------------------------------------- |
@@ -117,7 +118,7 @@ repository renames and to detect when an old name is reused for a new entity.
 
 ### Resolved dependencies
 
-The `resolvedDependencies` SHOULD contain an entry identifying the resolved git
+The `resolvedDependencies` MUST contain an entry identifying the resolved git
 commit ID corresponding to `externalParameters.workflow`. The dependency's `uri`
 MUST be in [SPDX Download Location] format:
 
