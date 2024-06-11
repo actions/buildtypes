@@ -6,5 +6,5 @@ GitHub Actions.
 
 ## What's in this repo
 
--   [workflow/v1](workflow/v1): `buildType` for a top-level GitHub Actions
-    Workflow.
+- [workflow/v1](workflow/v1): `buildType` for a top-level GitHub Actions
+  Workflow.
